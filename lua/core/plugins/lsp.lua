@@ -20,7 +20,7 @@ return {
         require("fidget").setup()
         require("mason").setup()
         require("mason-lspconfig").setup({
-        handlers = {
+            handlers = {
                 function(server)
                     require("lspconfig")[server].setup {
                         capabilities = capabilities
@@ -39,7 +39,11 @@ return {
                             }
                         }
                     }
-                end
+                end,
+                ["jdtls"] = function() -- I don't know if this is the proper way of setting up nvid-jdtls if I also use lspconfig for other things lol
+                    -- Lsp config, you don't have to do anything for this server !
+
+                end,
             },
         })
         local cmp = require("cmp")
