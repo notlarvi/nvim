@@ -1,3 +1,4 @@
+vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 local autocmd = vim.api.nvim_create_autocmd
 autocmd('LspAttach', {
     callback = function(e)
@@ -14,4 +15,4 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     end
 })
--- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
