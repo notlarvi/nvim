@@ -15,4 +15,16 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     end
 })
+--nnoremap crv <Cmd>lua require('jdtls').extract_variable()<CR>
+--vnoremap crv <Esc><Cmd>lua require('jdtls').extract_variable(true)<CR>
+--nnoremap crc <Cmd>lua require('jdtls').extract_constant()<CR>
+--vnoremap crc <Esc><Cmd>lua require('jdtls').extract_constant(true)<CR>
+--vnoremap crm <Esc><Cmd>lua require('jdtls').extract_method(true)<CR>
+
+
+--" If using nvim-dap
+--" This requires java-debug and vscode-java-test bundles, see install steps in this README further below.
+--nnoremap <leader>df <Cmd>lua require'jdtls'.test_class()<CR>
+--nnoremap <leader>dn <Cmd>lua require'jdtls'.test_nearest_method()<CR>
+
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)

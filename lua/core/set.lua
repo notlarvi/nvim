@@ -12,3 +12,5 @@ vim.opt.smartindent = true
 vim.opt.scrolloff = 8
 
 vim.opt.swapfile = false
+-- netrw
+vim.g.nvim_tree_group_empty = true

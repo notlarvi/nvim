@@ -16,6 +16,7 @@ return {
     },
 
     config = function()
+        require('java').setup()
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require("fidget").setup()
         require("mason").setup()
@@ -39,10 +40,6 @@ return {
                             }
                         }
                     }
-                end,
-                ["jdtls"] = function() -- I don't know if this is the proper way of setting up nvid-jdtls if I also use lspconfig for other things lol
-                    -- Lsp config, you don't have to do anything for this server !
-
                 end,
             },
         })
