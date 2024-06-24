@@ -14,3 +14,8 @@ vim.opt.scrolloff = 8
 vim.opt.swapfile = false
 -- netrw
 vim.g.nvim_tree_group_empty = true
+-- obsidian.lua
+vim.opt.conceallevel = 1
+-- lualine 
+vim.opt.showmode = false
+

@@ -9,6 +9,10 @@ return {
         config = function()
             local telescope = require('telescope')
             telescope.setup {
+                -- figure this out later
+--                file_ignore_patterns = {
+--                    "%.class",
+--                },
                 extensions = {
                     fzf = {
                         fuzzy = true,                    -- false will only do exact matching

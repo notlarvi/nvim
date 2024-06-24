@@ -13,10 +13,13 @@ return {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
+        {  -- java
+            "mfussenegger/nvim-jdtls",
+            -- ft = "java"
+        },
     },
 
     config = function()
-        require('java').setup()
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require("fidget").setup()
         require("mason").setup()
@@ -26,6 +29,9 @@ return {
                     require("lspconfig")[server].setup {
                         capabilities = capabilities
                     }
+                end,
+                ["jdtls"] = function()
+                    -- do nothing
                 end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
@@ -68,5 +74,5 @@ return {
                 { name = 'buffer' },
             })
         })
-    end
+    end,
 }

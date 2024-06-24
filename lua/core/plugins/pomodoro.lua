@@ -5,7 +5,8 @@ return {
     cmd = { "TimerStart", "TimerRepeat" },
     dependencies = {
         -- Optional, but highly recommended if you want to use the "Default" timer
-        "rcarriga/nvim-notify",
+        -- the notifications make me puke :(
+        -- "rcarriga/nvim-notify",
     },
     opts = {
         -- See below for full list of options 👇
