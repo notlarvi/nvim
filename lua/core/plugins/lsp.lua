@@ -13,10 +13,11 @@ return {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
-        {  -- java
-            "mfussenegger/nvim-jdtls",
-            -- ft = "java"
-        },
+        -- not javaing for now (useless)
+--        {  -- java
+--            "mfussenegger/nvim-jdtls",
+--            -- ft = "java"
+--        },
     },
 
     config = function()
@@ -70,6 +71,7 @@ return {
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' }, -- For luasnip users.
+                { name = "neorg" },
             }, {
                 { name = 'buffer' },
             })

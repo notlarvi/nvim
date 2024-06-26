@@ -29,3 +29,11 @@ autocmd('LspAttach', {
 --nnoremap <leader>dn <Cmd>lua require'jdtls'.test_nearest_method()<CR>
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+
+vim.keymap.set("n", "<leader>nt", function()
+	vim.cmd("Neorg journal today")
+end)
+
+vim.keymap.set("n", "<leader>nn", function()
+	vim.cmd("Neorg keybind norg core.dirman.new.note")
+end)

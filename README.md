@@ -1,7 +1,9 @@
-# larv's new updated neovim config
+# larv's new updated (personal) neovim config
 
-> [!WARNING]
-> This config is not portable, and probably won't work out of the box
+
+# Requirements (so i don't forget)
+- make sure to have all the base-devel build-essentials installed
+- ~luarocks because without it telescope fails to install~
 
 ## Additional reading:
 - https://github.com/ThePrimeagen/init.lua/
@@ -13,5 +15,5 @@
 >    netrw pretty much does the same thing but is a bit more ugly
 - [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls)
 >    Use [nvim-java](https://github.com/nvim-java/nvim-java) instead, much painless :)
-
+>   >   Nvm nvim-jdtls is better for java
 
