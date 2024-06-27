@@ -30,8 +30,15 @@ autocmd('LspAttach', {
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
-vim.keymap.set("n", "<leader>nt", function()
+-- journal keybinds
+vim.keymap.set("n", "<leader>jh", function()
+	vim.cmd("Neorg journal yesterday")
+end)
+vim.keymap.set("n", "<leader>jt", function()
 	vim.cmd("Neorg journal today")
+end)
+vim.keymap.set("n", "<leader>jn", function()
+	vim.cmd("Neorg journal tomorrow")
 end)
 
 vim.keymap.set("n", "<leader>nn", function()
